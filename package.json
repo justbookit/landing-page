@@ -2,7 +2,7 @@
   "name": "landing-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://paul1596.github.io/justbookit/",
+  "homepage": "https://justbookit.github.io/landing-page/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.5.2",
