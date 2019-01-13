@@ -60,6 +60,22 @@ class LandingPage extends Component {
                         </div>
                     </div>
 
+                    <div className="lightgray-container gray">
+                        <i className="email-icon fas fa-envelope"></i>
+                        <label className="bold-text size-30">Subscribe</label>
+                        <div className="horizontal-orange-line"></div>
+                        <div>
+                            <p className="size-16">
+                                Subscribe to our newsletters and stay updated!
+                            </p>
+                            <form className="subscribe-container" method="POST" action="https://formspree.io/dssproject2018@gmail.com">
+                                <input className="subscribe-input" value={this.state.email} type="email" name="email" placeholder="Enter your email address"
+                                       onChange={(event) => this.setState({email: event.target.value})}/>
+                                <button className="send-button bold-text white" type="submit" disabled={!(this.state.email !== "")}>Send</button>
+                            </form>
+                        </div>
+                    </div>
+
                     <div className="lightgray-container">
                         <div className="our-services-title">
                             <label className="bold-text size-30 gray">Why JustBookIt?</label>
@@ -171,22 +187,6 @@ class LandingPage extends Component {
                                 <button className="app-button white size-16" onClick={this.handleClick.bind(this)}>GET STARTED</button>
                                 <div className="message-container size-15"><p><b>{this.state.message}</b></p></div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div className="lightgray-container gray">
-                        <i className="email-icon fas fa-envelope"></i>
-                        <label className="bold-text size-30">Subscribe</label>
-                        <div className="horizontal-orange-line"></div>
-                        <div>
-                            <p className="size-16">
-                                Subscribe to our newsletters and stay updated!
-                            </p>
-                            <form className="subscribe-container" method="POST" action="https://formspree.io/dssproject2018@gmail.com">
-                                <input className="subscribe-input" value={this.state.email} type="email" name="email" placeholder="Enter your email address"
-                                    onChange={(event) => this.setState({email: event.target.value})}/>
-                                <button className="send-button bold-text white" type="submit" disabled={!(this.state.email !== "")}>Send</button>
-                            </form>
                         </div>
                     </div>
 
